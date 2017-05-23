@@ -48,6 +48,9 @@ Partial Class Form1
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,9 +96,9 @@ Partial Class Form1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(274, 215)
+        Me.PictureBox1.Location = New System.Drawing.Point(276, 255)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(130, 93)
+        Me.PictureBox1.Size = New System.Drawing.Size(126, 141)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -104,9 +107,9 @@ Partial Class Form1
         '
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(274, 85)
+        Me.PictureBox2.Location = New System.Drawing.Point(276, 108)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(128, 128)
+        Me.PictureBox2.Size = New System.Drawing.Size(128, 141)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -116,9 +119,9 @@ Partial Class Form1
         Me.PictureBox3.AccessibleDescription = ""
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(274, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(277, 12)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(130, 67)
+        Me.PictureBox3.Size = New System.Drawing.Size(127, 90)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
@@ -284,11 +287,40 @@ Partial Class Form1
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "New Unique ID"
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(12, 314)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(125, 82)
+        Me.Button7.TabIndex = 0
+        Me.Button7.Text = "Open Icon File"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Enabled = False
+        Me.Button8.Location = New System.Drawing.Point(143, 314)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(125, 38)
+        Me.Button8.TabIndex = 0
+        Me.Button8.Text = "Remove Age Rating" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And Save To Icon File"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Enabled = False
+        Me.Button9.Location = New System.Drawing.Point(143, 358)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(125, 38)
+        Me.Button9.TabIndex = 0
+        Me.Button9.Text = "Remove Region Lock" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And Save To Icon File" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(408, 314)
+        Me.ClientSize = New System.Drawing.Size(408, 412)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -311,6 +343,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
@@ -318,7 +353,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "VoodooChaos v2.0"
+        Me.Text = "VoodooChaos v2.1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -352,4 +387,7 @@ Partial Class Form1
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
 End Class
